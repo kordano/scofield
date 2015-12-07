@@ -4,9 +4,15 @@ var webpack = require('webpack');
 var path = require('path');
 
 module.exports = {
-	entry: './src/core.js',
+  entry: [
+    'webpack/hot/dev-server',
+    'webpack-dev-server/client?http://localhost:8080',
+    path.resolve(__dirname, 'src/core.js')
+  ],
 	output: {
-		filename: 'dist/bundle.js'
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/',
+    filename: 'bundle.js'
 	},
 	node: {
 		fs: 'empty'
@@ -27,5 +33,8 @@ module.exports = {
       }
 			}
 		]
-	}
+	},
+  devServer: {
+    contentBase: './dist'
+  }
 };
