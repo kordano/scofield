@@ -1,0 +1,41 @@
+{
+  "name": "scofield",
+  "version": "1.0.0",
+  "description": "Test environment for an escape game",
+  "main": "server.js",
+  "scripts": {
+    "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kordano/scofield.git"
+  },
+  "keywords": [
+    "game",
+    "puzzle",
+    "prisonbreak"
+  ],
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "author": "Konrad Kühne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kordano/scofield/issues"
+  },
+  "homepage": "https://github.com/kordano/scofield#readme",
+  "devDependencies": {
+    "babel-core": "^6.3.15",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "json-loader": "^0.5.4",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "dependencies": {
+    "pixi.js": "github:goodboydigital/pixi.js"
+  }
+}
