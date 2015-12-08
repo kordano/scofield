@@ -32,7 +32,7 @@ function drawTiles(selected) {
       if(x === selX && y === selY) {
         graphics.lineStyle(1, 0xaaffaa, 1);
         graphics.beginFill(0x991010, 1);
-        let textString = '[ ' + x + ' , ' +  y + ' ]',
+        let textString = '[ ' + (x + 1) + ' , ' +  (y + 1) + ' ]',
             text = new PIXI.Text(textString, fontStyle);
         text.anchor = new PIXI.Point(0.5,0.5);
         text.x = (x * tileSize) + (tileSize/2);
